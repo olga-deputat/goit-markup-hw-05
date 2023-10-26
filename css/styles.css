@@ -6,6 +6,7 @@
     --GREEN:#31D0AA;
     --SLATE: #434455;
     --WHITE: #FFF;
+    --NAVY-BLUE-modal: rgba(46, 47, 66, 0.40);
 }
 
    
@@ -247,7 +248,6 @@
     border-radius: 4px;
     background-color:  #F4F4FD;
     margin-bottom: 8px;
-    padding: 24px 100px;
 }
 
 .recorces-list-title {
@@ -287,7 +287,6 @@
 
 .img-list{
     gap: 24px;
-    margin-bottom: 23px;
 }
 /* ======= /section 2 ======*/
 
@@ -425,7 +424,6 @@
 .costomers-icons-block:hover,
 .costomers-icons-block:focus {
     color: var(--OCEAN);
-    border-color: var(--OCEAN);
 }
 
 .customers-icons{
@@ -445,17 +443,16 @@
 /* ==================== FOOTER ================== */
 .page-footer {
     background: var(--accent-color);
-    padding: 100px 156px; 
+    padding: 100px 0; 
 }
 
 .conteiner-footer{
     display: flex;
     align-items: baseline;
-    gap: 120px;
 }
 
 .logo-footer {
-    margin-right: 120px;
+    color: #F4F4FD;
 }
 
 .logo-a{
@@ -470,6 +467,7 @@
     line-height: 1.5;
     letter-spacing: 0.32px;
     width: 264px;
+    margin-right: 120px;
 }
 
 .text-social-footer{
@@ -528,7 +526,7 @@ gap: 16px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin: 0 186px 72px 186px;
+    margin-bottom: 72px;
     justify-content: center;
 }
 .portfolio-btn {
@@ -560,12 +558,6 @@ gap: 16px;
 }
 
 .text-portfolio{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
-    align-self: stretch;
     padding: 32px 16px;
     border: 1px solid #e7e9fc; 
     border-top: none;
@@ -576,17 +568,15 @@ gap: 16px;
     gap: 24px;
     row-gap: 48px;
 }
-.text-img-portfolio{
-    margin-bottom: 8px;
-}
 
 .h2-portfolio{
-    font-family: Roboto;
+    color: var(--NAVY-BLUE, #2E2F42);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; 
+    line-height: 1.2; 
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 .team{
     background-color: #FFFFFF;
@@ -638,10 +628,11 @@ gap: 16px;
 
 .p-portfolio{
     font-family: Roboto;
+    color: var(--SLATE, #434455);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; 
+    line-height: 1.5; 
     letter-spacing: 0.32px;
 }
 .visually-hidden {
@@ -688,6 +679,7 @@ gap: 16px;
     background: var(--DAIRY, #FCFCFC);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);    
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 }
 
 .modal-btn{
@@ -723,5 +715,68 @@ gap: 16px;
     stroke: var(--accent-color);
 }
 
+
+/* ================== MODAL WINDOW ================*/
+/*========= modal-form ==========*/
+.modal-text{
+    width: 360px;
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.modal-label{
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    margin-bottom: 4px;
+}
+
+.modal-icons{
+    fill: #2E2F42;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+}
+
+.modal-conteiner-imput{
+
+}
+
+.modal-form-div{
+    position: relative;
+
+}
+
+.imput-form{
+    padding: 11px 4px 11px 38px;
+    width: 360px;
+    height: 40px;
+    color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    outline: transparent;
+}
+
+.imput-form:focus {
+    border: 1px solid var(--IRIS, #4D5AE5);
+}
+
+.imput-form:focus + .modal-icons{
+    fill: var(--IRIS, #4D5AE5);
+}
+
+/*========= modal-form ==========*/
 
 /* ================== MODAL WINDOW ================*/
