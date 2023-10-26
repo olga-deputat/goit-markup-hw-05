@@ -361,11 +361,22 @@
                             </li>
                         </ul>
                 </div>
-                <div>
-                    <p class="">Subscribe</p>
-                    <imput></imput>
-                    <button type="submit">Subscribe</button>
+
+                <div class="div-subscribe">
+                    <p class="subscrabe-text">Subscribe</p>
+                    <form class="form-footer">
+                        <label class="label-footer" for="label-footer">
+                            <input type="email" class="email-footer" name="email-footer" placeholder="E-mail">
+                            <button type="submit" class="subscribe-footer-btn">Subscribe
+                                <svg class="btn-footer-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#Subscribe">
+                                    </use>
+                                </svg>
+                            </button>
+                        </label>
+                    </form>
                 </div>
+                
         </div>
     </footer>
 
@@ -378,7 +389,7 @@
                 </svg>
              </button>
              <p class="modal-text">Leave your contacts and we will call you back</p>
-             <form class="" name="" autocomplete="on">
+             <form name="modal-form" autocomplete="on">
                 <div class="modal-form-div">
                     <label class="modal-label" for="user-name">Name</label>
                     <div class="modal-conteiner-imput">
@@ -409,18 +420,22 @@
                 
                 <div class="modal-form-div">
                     <label class="modal-label" for="user-comment">Comment</label>
-                    <div class="modal-conteiner-imput">
-                        <input class="imput-form" type="text" name="user-comment" id="user-comment"/>
-                    </div>
+                    <textarea class="textaria-modal" name="user-comment" id="user-comment" rows="10" placeholder="Text input"></textarea>
                 </div>
-                <div>
-                    <label for="">I accept the terms and conditions of the Privacy Policy</label>
-                    <input  class="imput-form" type="checkbox">
-                    <svg class="modal-icons" width="16" height="16">
-                        <use href="./images/icons.svg#icon-check"></use>
-                    </svg>
+
+                <div class="modal-checkbox">
+                    <input  class="checkbox visually-hidden" type="checkbox" id="user-checkbox"/>
+                    <label class="user-checkbox" for="user-checkbox">
+                        <span class="custom-checkbox">
+                            <svg class="icon-checkbox" width="10" height="8">
+                             <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span> 
+                         I accept the terms and conditions of the 
+                         <a class="checkbox-policy" href="#">Privacy Policy</a>  
+                    </label>   
                 </div>
-                <button type="submit">Send</button>
+                <button class="send-button" type="submit">Send</button>
              </form>
         </div>
     </div>

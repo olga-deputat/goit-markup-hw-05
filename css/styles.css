@@ -482,6 +482,7 @@
 .footer-list-icons{
 display: flex;
 gap: 16px;
+margin-right: 80px;
 }
 
 .footer-item-icons{
@@ -510,6 +511,65 @@ gap: 16px;
     fill: #f4f4fd;
 }
 
+/*====== form-footer =======*/
+.subscrabe-text{
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.label-footer{
+    display: flex;
+    gap: 24px;
+}
+
+.email-footer{
+    color: var(--WHITE, #FFF);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.48px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--WHITE, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+}
+
+.placeholder{
+    color: var(--WHITE);
+}
+
+.subscribe-footer-btn{
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 165px;
+    height: 40px;
+    border: none;
+}
+
+.btn-footer-icon{
+    fill: currentColor;
+}
+/*====== /form-footer =======*/
 /* ====================== /FOOTER ==================== */
 
 
@@ -734,6 +794,7 @@ gap: 16px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.48px;
+    display: block;
     margin-bottom: 4px;
 }
 
@@ -742,20 +803,21 @@ gap: 16px;
     position: absolute;
     left: 16px;
     top: 50%;
+    transform: translateY(-50%);
 }
 
 .modal-conteiner-imput{
-
+    position: relative;
 }
 
 .modal-form-div{
-    position: relative;
-
+    margin-bottom: 8px;
+    
 }
 
 .imput-form{
     padding: 11px 4px 11px 38px;
-    width: 360px;
+    width: 100%;
     height: 40px;
     color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     font-family: Roboto;
@@ -777,6 +839,90 @@ gap: 16px;
     fill: var(--IRIS, #4D5AE5);
 }
 
+.textaria-modal{
+    color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17; 
+    letter-spacing: 0.48px;
+    height: 120px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    padding: 8px 16px;
+    background-color: transparent;
+    outline: transparent;
+    resize: none;
+}
+
+.textaria-modal:focus{
+    border: 1px solid var(--IRIS, #4D5AE5);
+}
+
+.user-checkbox{
+    display: block;
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.48px;
+}
+
+.custom-checkbox{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    fill: transparent;
+    margin-right: 8px;
+}
+.checkbox:checked + .user-checkbox .custom-checkbox{
+    fill: #F4F4FD;
+    border: none;
+    background-color: var(--IRIS);
+}
+
+.checkbox-policy{
+    color: var(--IRIS, #4D5AE5);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+}
+
+.modal-checkbox{
+    margin-bottom: 24px;
+}
+
+.send-button{
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    cursor:pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    display: block;
+    width: 169px;
+    height: 56px;
+    border: none;
+    margin: 0 auto;
+}
+
+.send-button:hover,
+.send-button:focus {
+    background-color: #404BBF;
+}
 /*========= modal-form ==========*/
 
 /* ================== MODAL WINDOW ================*/
